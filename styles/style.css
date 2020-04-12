@@ -5,6 +5,12 @@
 
 body {
     color: #60606e;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Montserrat, sans-serif;
+    text-transform: uppercase;
 }
 
 .ba-container {
@@ -64,6 +70,7 @@ body {
     background-size: cover;
     text-align: center;
     padding: 262px 0 100px;
+    font-family: Montserrat, sans-serif;
 }
 
 .ba-breadcrumbs {
@@ -94,4 +101,80 @@ body {
 .ba-title {
     font-size: 36px;
     text-transform: uppercase;
+}
+
+.ba-h2 > span {
+   position: relative; 
+}
+
+.ba-h2 > span:before {
+    content: '';
+    display: inline-block;
+    background-color: #7beec7;
+    width: 68px;
+    height: 22px;
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    z-index: -1;
+}
+
+.ba-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+[class^="ba-col"] {
+    padding: 0 15px;
+}
+
+.ba-col-6 {
+    width: 50%;
+}
+.ba-col-4 {
+    width: 33.3333%;
+}
+
+.ba-col-3 {
+    width: 25%;
+}
+
+.ba-about__item {
+    width: 50%;
+    padding: 0 15px;
+}
+
+.ba-section {
+    padding-top: 150px;
+}
+
+.ba-section-header {
+    text-align: center;
+}
+
+/* ba-benefit */
+.ba-benefit__head {
+    display: flex;
+    align-items: center;
+}
+
+.ba-benefit__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+    background-color: #7beec7;
+    margin-right: 20px;
+}
+
+.ba-benefit__icon i {
+    color: #fff;
+    font-size: 25px;
+}
+
+.ba-benefit__title {
+    margin: 0;
 }
